@@ -1,0 +1,32 @@
+<!--  
+    <input type="email" />
+
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+
+    - required
+
+    - multiple
+        * O campo irá receber 1 ou mais emails, separado por vírgulas
+    
+    - minlength / maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+
+    -size
+-->
+
+<form action="">
+    <datalist id="emailslist">
+        <option>teste@gmail.com</option>
+    </datalist>
+    <input type="email" 
+       list="emailslist"
+    >
+    <button type="submit">Enviar</button>
+</form>

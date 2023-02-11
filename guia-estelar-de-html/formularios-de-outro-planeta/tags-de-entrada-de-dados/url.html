@@ -1,0 +1,39 @@
+<!--  
+    <input type="url" />
+
+    - Espera que o usuário digite um url
+    - Irá validar se o valor digitado é uma url
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+
+    - required
+
+    - minlength / maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+
+    - size 
+        * Valor numérico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+
+    - pattern
+-->
+
+<datalist id="urlsdata">
+    <option>https://meusite1.com.br</option>
+    <option>https://meusite2.com.br</option>
+</datalist>
+
+<form action="">
+    <input 
+        type="url" 
+        placeholder="https://example.cm"
+        pattern=".*/.com/.br.*"
+        title="Somente domínios .com.br serão aceitos"
+        required
+        list="urlsdata"
+    />
+    <button type="submit">Enviar</button>
+</form>
