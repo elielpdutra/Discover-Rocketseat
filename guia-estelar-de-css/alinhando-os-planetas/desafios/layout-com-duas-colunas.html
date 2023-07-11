@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com duas colunas</title>
+
+    <style>
+        .container{
+            display: flex;
+            gap: 1rem;
+        }
+
+        aside,main{
+            border: 1px solid;
+            height: 95vh;
+        }
+
+        aside {
+            flex-basis: 25%;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            Coluna direita
+        </aside>
+        <main>
+            Coluna esquerda
+        </main>
+    </div>
+</body>
+</html>
