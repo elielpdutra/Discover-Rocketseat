@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conte]=nt="width=device-width, initial-scale=1.0">
+    <title>Manipulando atributos</title>
+</head>
+<body>
+
+    <header class="bg">
+        <h1 class="one">Meu Blog</h1>
+    </header>
+   
+
+    <script>
+        // Manipulando atributos
+
+        const header = document.querySelector('header');
+        header.setAttribute('id', 'header');
+
+        const headerID = document.querySelector('#header');
+
+        console.log(headerID.getAttribute('class'));
+
+        header.removeAttribute('id');
+        // header.removeAttribute('class');
+        header.setAttribute('class', 'bg header');
+       
+    </script>
+</body>
+</html>
