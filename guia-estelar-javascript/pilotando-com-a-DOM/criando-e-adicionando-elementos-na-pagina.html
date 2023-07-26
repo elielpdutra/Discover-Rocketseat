@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando e adicionando elementos na página</title>
+</head>
+<body>
+    <h1 class="one">Meu Blog</h1>
+
+    <script>
+        // Criando e adicionando elementos na página
+
+        // createElement
+        const div = document.createElement('div');
+        div.innerText = "Olá Devs!";
+
+        // append prepend
+        const body = document.querySelector('body');
+        
+        body.prepend(div);
+        
+    </script>
+</body>
+</html>

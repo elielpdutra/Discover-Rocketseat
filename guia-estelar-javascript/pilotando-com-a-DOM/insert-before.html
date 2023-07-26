@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore</title>
+</head>
+<body>
+    <header>
+        <h1>Meu blog</h1>
+    </header>
+
+    <script>
+        // insertBefore
+
+        const div = document.createElement('div');
+        div.innerText = "Olá Devs!";
+
+
+        const body = document.querySelector('body');
+        const header = document.querySelector('header');
+
+        body.insertBefore(div, header.nextElementSibling);
+        
+        // const script = document.querySelector('script');
+        // body.insertBefore(div, script);
+        
+    </script>
+</body>
+</html>
