@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando eventos via JS</title>
+</head>
+<body>
+    <header>
+        <h1>Meu blog</h1>
+    </header>
+
+    <script>
+        // Adicionando eventos via JS
+        // EVENTOS
+
+        const h1 = document.querySelector('h1');
+
+        // h1.onclick = print;
+
+        h1.addEventListener('click', print);
+
+        function print() {
+            console.log('print');
+        }   
+        
+        h1.addEventListener('click', function(){
+            console.log('outro momento');
+        });
+
+        // h1.onclick = function() {
+        //     console.log('outro momento');
+        // };
+        
+    </script>
+</body>
+</html>
