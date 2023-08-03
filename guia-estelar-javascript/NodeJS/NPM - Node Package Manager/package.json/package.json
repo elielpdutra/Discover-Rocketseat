@@ -1,0 +1,18 @@
+{
+  "name": "qualquer-nome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "learning",
+    "node.js"
+  ],
+  "author": "Eliel Dutra",
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "^3.2.0"
+  }
+}
